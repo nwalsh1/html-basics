@@ -1,0 +1,62 @@
+img {
+        display: block;
+        margin-bottom: 50px;
+      }
+
+      .rounded-corners {
+        width: 200px;
+        border-radius: 10px;
+      }
+      .square {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .circle {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 100px;
+      }
+      .search{
+        border-radius: 5px;
+        display: block;
+        margin-bottom: 30px;
+        width: 100px;
+      }
+      .google-search{
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+        width: 250px;
+        margin-bottom: 30px;
+      }
+      p {
+        font: Arial;
+        font-size: 11px;
+        color: gray;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        border-radius: 2px;
+      }
+      .email-input{
+        border-radius: 2px; 
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        width: 250px;
+      }
+
+      .agree-button{
+        color: white;
+        background-color: blue;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 90px;
+        padding-right: 90px;
+        border-radius: 20px;
+        border: none;
+
+      }
