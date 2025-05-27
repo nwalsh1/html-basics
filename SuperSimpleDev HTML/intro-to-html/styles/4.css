@@ -1,0 +1,59 @@
+a {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .movement-button {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+
+      .pagination {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .green-buttons button {
+        color: white;
+        background-color: green;
+        padding: 8px;
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      .stretch-button {
+        transition: padding 1s;
+      }
+
+      .stretch-button:hover {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      .shadow-button {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        transition: margin 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+      }
+
+      .shadow-button:active {
+        margin-left: 5px;
+        margin-top: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+      }
+      .number-btn {
+        margin-right: 5px;
+        margin-left: 5px;
+        transition: margin 0.2s, padding 0.2s;
+      }
+      .number-btn:hover {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 13px;
+        padding-right: 13px;
+      }
