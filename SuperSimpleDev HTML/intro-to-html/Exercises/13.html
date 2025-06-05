@@ -2,87 +2,7 @@
 <html>
   <head>
     <title>Exercise 13</title>
-    <style>
-      .flexbox {
-        display: flex;
-        flex-direction: row;
-        height: 50px;
-        margin-bottom: 50px;
-      }
-      .pink {
-        background-color: lightpink;
-      }
-      .blue {
-        background-color: lightblue;
-      }
-      .flex-100px {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100px;
-      }
-
-      .item1 {
-        background-color: black;
-        color: white;
-      }
-      .flex-200px {
-        width: 200px;
-      }
-      .flex-row2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-
-      .row2 {
-        background-color: black;
-        color: white;
-      }
-
-      img {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 50%;
-      }
-
-      .flexbox-12g {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 50px;
-        border-radius: 5px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-      }
-
-      .follow {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        padding: 10px;
-        width: 300px;
-        border-color: lightgray;
-        border-style: solid;
-        border-width: 1px;
-      }
-
-      .text-container {
-        width: 150px;
-        padding-right: 100px;
-        padding-left: 10px;
-      }
-
-      .bold {
-        font-weight: bold;
-      }
-
-      .grey-text {
-        color: rgb(134, 134, 134);
-      }
-    </style>
+    <link rel="stylesheet" href="../styles/13.css" />
   </head>
   <body>
     <div class="flexbox">
@@ -103,15 +23,73 @@
       </div>
     </div>
 
-    <div class="flexbox-13c">
-      <div class="follow">
-        <div><img src="images/cat.jpg" /></div>
+    <div class="flexbox-gmail">
+      <div class="title">ALL INBOXES</div>
+      <div class="email-flexbox">
+        <div><img class="email-image" src="images/cat.jpg" /></div>
         <div class="text-container">
-          <div class="bold">Oliver</div>
-          <div class="grey-text">The Cat</div>
-          <div class="grey-text">Popular</div>
+          <div class="email-top-row">
+            <div class="email-header">
+              <div class="sender">Chewy Promotions</div>
+              <div class="subject">Biggest sales of the year!</div>
+            </div>
+            <div class="time">4:58 PM</div>
+          </div>
+          <div class="email-preview">
+            Hey there! We're writing to tell you about our...
+          </div>
         </div>
-        <div class="follow-button">4:58 PM</div>
+      </div>
+    </div>
+
+    <div class="flexbox-gmail">
+      <div class="title">ALL INBOXES</div>
+      <div class="email-flexbox">
+        <div><img class="email-image" src="images/cat.jpg" /></div>
+        <div class="text-container">
+          <div class="email-top-row">
+            <div class="email-header">
+              <div class="sender">Chewy Promotions</div>
+              <div class="subject">Biggest sales of the year!</div>
+            </div>
+            <div class="time">4:58 PM</div>
+          </div>
+          <div class="email-preview">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+
+      <div class="email-flexbox">
+        <div><img class="email-image" src="images/cat2.jpg" /></div>
+        <div class="text-container">
+          <div class="email-top-row">
+            <div class="email-header">
+              <div class="sender">Best Buy</div>
+              <div class="subject">Your Best Buy eReceipt</div>
+            </div>
+            <div class="time">12:32 PM</div>
+          </div>
+          <div class="email-preview">
+            Thank you for shopping at Best Buy, here is...
+          </div>
+        </div>
+      </div>
+
+      <div class="email-flexbox">
+        <div><img class="email-image" src="images/dog.jpg" /></div>
+        <div class="text-container">
+          <div class="email-top-row">
+            <div class="email-header">
+              <div class="sender">Netflix</div>
+              <div class="subject">Here's what's coming soon to Netflix</div>
+            </div>
+            <div class="time">9:00 AM</div>
+          </div>
+          <div class="email-preview">
+            Brand new movies and shows, old favorites...
+          </div>
+        </div>
       </div>
     </div>
   </body>
