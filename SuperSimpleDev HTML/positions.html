@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Practice</title>
+  </head>
+  <!--best practice to add padding to body if you have a fixed header-->
+  <body style="height: 3000px; padding-top: 60px; padding-left: 80px">
+    <div
+      style="
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        /*adding opposite directions causes element to stretch*/
+        left: 0;
+        right: 0;
+        /*use height and width if you do NOT want element to resize with page*/
+        height: 50px;
+      "
+    >
+      header
+    </div>
+    <div
+      style="
+        background-color: green;
+        color: white;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        bottom: 0;
+        width: 70px;
+      "
+    >
+      sidebar
+    </div>
+    <div
+      style="
+        background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        /*Position element, static is default*/
+        position: static;
+      "
+    >
+      div 1
+    </div>
+    <div style="background-color: lightpink; height: 200px; width: 200px">
+      div 2
+    </div>
+  </body>
+</html>

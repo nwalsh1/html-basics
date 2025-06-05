@@ -1,10 +1,13 @@
 p {
-        /*Back-up font*/
-        font-family: "Roboto", Arial;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
+  /*Back-up font*/
+  font-family: "Roboto", Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-      body{
-        margin: 0;
-      }
+body {
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 80px;
+  height: 2000px;
+}
