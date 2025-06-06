@@ -16,6 +16,9 @@
         right: 0;
         /*use height and width if you do NOT want element to resize with page*/
         height: 50px;
+        z-index: 1;
+        /*z-index is used to control stacking of elements*/
+        /*higher z on top*/
       "
     >
       header
@@ -32,6 +35,30 @@
       "
     >
       sidebar
+      <div
+        style="
+          position: absolute;
+          background-color: red;
+          color: white;
+          top: 0px;
+          right: 0px;
+        "
+      >
+        X
+        <!--when absolute in a fixed element, the position becomes relative to that element-->
+      </div>
+    </div>
+
+    <div
+      style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        top: 60px;
+        right: 10px;
+      "
+    >
+      absolute
     </div>
     <div
       style="
@@ -44,8 +71,27 @@
     >
       div 1
     </div>
-    <div style="background-color: lightpink; height: 200px; width: 200px">
+    <div
+      style="
+        background-color: lightpink;
+        height: 200px;
+        width: 200px;
+        position: relative;
+      "
+    >
       div 2
+      <div
+        style="
+          position: absolute;
+          background-color: black;
+          color: white;
+          bottom: 10px;
+          right: 10px;
+          /*when absolute is in a relative element, the position becomes relative to that element*/
+        "
+      >
+        5:00
+      </div>
     </div>
   </body>
 </html>
