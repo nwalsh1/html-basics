@@ -1,0 +1,85 @@
+body {
+  height: 3000px;
+  padding-right: 50px;
+}
+.top-right-container {
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.close-button {
+  color: white;
+  background-color: black;
+  padding: 9px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+.bottom-right-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  height: 180px;
+  background-color: gray;
+}
+.button-container {
+  position: relative;
+  top: -15px;
+  left: -15px;
+}
+.time {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 8px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.shopping-window {
+  display: inline-block;
+  position: relative;
+}
+
+.discount {
+  font-family: Arial;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: white;
+  background-color: black;
+  padding: 6px 12px;
+}
+
+.bottom-window {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-button {
+  font-family: Arial;
+  padding: 10px 15px;
+  border-style: solid;
+  background-color: white;
+  color: black;
+  border-color: black;
+  cursor: pointer;
+  font-weight: 600;
+}
