@@ -5,4 +5,28 @@
   top: 55px;
   background-color: white;
   width: 72px;
+  z-index: 11;
+  padding-top: 5px;
+}
+
+.sidebar-container {
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.sidebar-container:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.sidebar-container img {
+  height: 24px;
+}
+
+.sidebar-container div {
+  font-family: roboto, Arial;
+  font-size: 10px;
+  margin-top: 4px;
 }
