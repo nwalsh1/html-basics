@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 14 Continued</title>
+    <style>
+      div {
+        font-family: Arial, sans-serif;
+      }
+      body {
+        padding-top: 70px; /* To avoid content being hidden behind the fixed header */
+        padding-left: 250px;
+        height: 3000px;
+      }
+      .header {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        justify-content: space-between;
+        padding-top: 5px;
+        padding-left: 60px;
+        padding-right: 60px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #ccc;
+        background-color: white;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+      }
+      .right-header,
+      .left-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .name {
+        font-weight: bold;
+      }
+      .friend-button {
+        padding: 7px 14px;
+        font-weight: 700;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(52, 139, 219);
+        color: white;
+        cursor: pointer;
+      }
+
+      .message-button {
+        padding: 7px 14px;
+        font-weight: 700;
+        border-radius: 5px;
+        border: none;
+        background-color: lightgray;
+        color: black;
+        cursor: pointer;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 65px;
+        left: 0;
+        bottom: 0;
+        width: 220px;
+        display: flex;
+        flex-direction: rows;
+        background-color: lightblue;
+      }
+
+      .profiles {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgb(54, 54, 54);
+      }
+
+      .channels {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: rgb(92, 92, 92);
+        flex: 1;
+      }
+
+      .channels-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .info {
+        color: white;
+        font-size: 12px;
+        padding: 0;
+      }
+      .plus {
+        color: rgb(172, 172, 172);
+        font-size: 25px;
+      }
+
+      .channel-title {
+        color: rgb(172, 172, 172);
+        font-size: 14px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-header">
+        <div><img src="images/cat.jpg" /></div>
+        <div><p class="name">Oliver Cat</p></div>
+      </div>
+      <div class="right-header">
+        <div><button class="friend-button">Add Friend</button></div>
+        <div><button class="message-button">Message</button></div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="profiles">
+        <div>
+          <img src="images/cat.jpg" />
+        </div>
+        <div>
+          <img src="images/cat2.jpg" />
+        </div>
+        <div>
+          <img src="images/dog.jpg" />
+        </div>
+      </div>
+      <div class="channels">
+        <div class="channels-header">
+          <div class="info">INFO</div>
+          <div class="plus">+</div>
+        </div>
+
+        <div class="channel-title"># new-videos</div>
+        <div class="channel-title"># updates</div>
+        <div class="channel-title"># faq</div>
+      </div>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+      pariatur culpa consectetur corporis aliquid error dolor quasi suscipit vel
+      inventore. elit.
+    </p>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum animi
+      deserunt nemo impedit debitis soluta aspernatur minima earum, incidunt eum
+      adipisci commodi ratione consequatur. Ex est cumque illum iusto
+      repellendus possimus nihil esse velit sint, modi ea neque rem sed
+      recusandae atque magnam quo voluptatem hic commodi eum placeat nesciunt!
+      Amet accusantium reiciendis totam illo, ea optio ipsa. Alias nemo maxime,
+      dolorum sequi laudantium ex reiciendis eius nesciunt, earum aperiam
+      repudiandae illo doloremque, velit similique. Autem minima eos molestiae
+      odio ex delectus culpa vitae unde maxime quam! Consectetur magni qui fugit
+      harum voluptates obcaecati illo dicta eaque adipisci perferendis. Odit
+      quisquam, voluptatem, omnis, voluptatibus voluptate maxime ex similique
+      autem est in harum veniam? Nemo porro magnam similique molestias error
+      consequuntur adipisci fugit illo, tempora quas, explicabo soluta? Sequi,
+      debitis reiciendis. Aspernatur, voluptas necessitatibus facilis sequi
+      tempora optio omnis voluptatibus rerum, ab molestias dignissimos
+      architecto enim eaque? Sint provident accusantium ducimus cum veritatis
+      quisquam eligendi culpa eveniet facere aspernatur, a tempora nostrum ab
+      laudantium et consectetur voluptatibus saepe quidem alias fugiat libero
+      necessitatibus distinctio? Quo itaque exercitationem in corrupti aliquid
+      tenetur sunt maxime impedit cum distinctio facere molestias alias omnis
+      doloribus, natus ut similique nulla sint quod, perferendis laborum
+      voluptatum quam.
+    </p>
+  </body>
+</html>

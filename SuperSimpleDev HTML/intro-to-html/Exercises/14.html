@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 14</title>
+    <style>
+      body {
+        height: 3000px;
+      }
+      div {
+        font-family: Arial, sans-serif;
+      }
+      .fixed-bottom-right {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        z-index: 2;
+      }
+
+      .right-sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        background-color: green;
+        color: white;
+        z-index: 1;
+      }
+
+      .page-cover {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .popup {
+        background-color: white;
+        width: 400px;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .modal-title {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+      .modal-content {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-bottom-right">bottom-right</div>
+    <div class="right-sidebar">right sidebar</div>
+    <div class="page-cover">
+      <div class="popup">
+        <div class="modal-title">Modal Title</div>
+        <div class="modal-content">This is a modal</div>
+        <div><button>Close</button></div>
+      </div>
+    </div>
+  </body>
+</html>
