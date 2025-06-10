@@ -43,15 +43,12 @@
   height: 36px;
   padding-left: 10px;
   font-size: 16px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(189, 188, 188);
+  border: 1px solid rgb(192, 192, 192);
   border-radius: 2px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
   width: 0;
 }
 .search-bar::placeholder {
-  font-family: Roboto, Arial;
   font-size: 16px;
   color: gray;
 }
@@ -83,7 +80,6 @@
 .upload-icon-container .tooltip,
 .apps-icon-container .tooltip,
 .notification-icon-container .tooltip {
-  font-family: Roboto, Arial;
   position: absolute;
   background-color: grey;
   color: white;
@@ -148,7 +144,6 @@
   background-color: rgb(206, 0, 0);
   top: -2px;
   right: -5px;
-  font-family: Roboto, Arial;
   font-size: 11px;
   padding: 2px 5px;
   border-radius: 50%;

@@ -22,6 +22,33 @@
   display: grid;
   grid-template-columns: 50px 1fr;
 }
+.channel-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.channel-picture .tooltip {
+  display: flex;
+  position: absolute;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -10px;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  background-color: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.channel-picture:hover .tooltip {
+  opacity: 1;
+}
 
 /*good to use 100% while inside a container*/
 .profile-picture {
@@ -35,14 +62,15 @@
 }
 .timestamp {
   position: absolute;
-  font-family: Roboto, Arial;
   right: 5px;
   bottom: 8px;
   background-color: black;
   color: white;
   font-size: 12px;
   font-weight: 500;
-  padding: 4px 4px;
+  /*first value vertical, second value horizontal*/
+  /*4 values: top right bottom left. Top and clockwise*/
+  padding: 4px;
   border-radius: 2px;
 }
 
@@ -51,4 +79,20 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
