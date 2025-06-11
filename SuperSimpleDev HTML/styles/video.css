@@ -22,21 +22,35 @@
   display: grid;
   grid-template-columns: 50px 1fr;
 }
-.channel-picture {
+.channel-picture-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.tooltip .profile-picture {
+  width: 46px;
+  margin-right: 8px;
+}
+
+.tooltip .channel-name {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.channel-picture {
   position: relative;
 }
 
 .channel-picture .tooltip {
   display: flex;
   position: absolute;
-  padding: 4px 8px;
+  padding: 10px 15px;
   border-radius: 2px;
   font-size: 12px;
-  bottom: -10px;
-  left: 10px;
+  bottom: -75px;
+  left: 0px;
   opacity: 0;
   transition: opacity 0.15s;
   pointer-events: none;
